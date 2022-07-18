@@ -11,8 +11,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
 	"github.com/google/go-cmp/cmp"
-	"golang.org/x/tools/internal/lsp/protocol"
 )
 
 // verify that type errors in Initialize lsp messages don't cause

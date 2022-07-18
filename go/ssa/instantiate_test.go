@@ -13,8 +13,8 @@ import (
 	"sort"
 	"testing"
 
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/cowpaths/golang-x-tools/go/loader"
+	"github.com/cowpaths/golang-x-tools/internal/typeparams"
 )
 
 // TestNeedsInstance ensures that new method instances can be created via needsInstance,

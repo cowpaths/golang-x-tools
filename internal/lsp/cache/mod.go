@@ -12,16 +12,16 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/cowpaths/golang-x-tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/gocommand"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/command"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/debug/tag"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
+	"github.com/cowpaths/golang-x-tools/internal/memoize"
+	"github.com/cowpaths/golang-x-tools/internal/span"
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/module"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/lsp/command"
-	"golang.org/x/tools/internal/lsp/debug/tag"
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/memoize"
-	"golang.org/x/tools/internal/span"
 )
 
 // ParseMod parses a go.mod file, using a cache. It may return partial results and an error.

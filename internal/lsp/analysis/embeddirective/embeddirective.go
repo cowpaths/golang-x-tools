@@ -9,7 +9,7 @@ import (
 	"go/ast"
 	"strings"
 
-	"golang.org/x/tools/go/analysis"
+	"github.com/cowpaths/golang-x-tools/go/analysis"
 )
 
 const Doc = `check for //go:embed directive import

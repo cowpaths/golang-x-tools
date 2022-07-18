@@ -12,10 +12,10 @@ import (
 	"go/types"
 	"strings"
 
-	"golang.org/x/tools/internal/lsp/lsppos"
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/memoize"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/lsppos"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
+	"github.com/cowpaths/golang-x-tools/internal/memoize"
 )
 
 // symbolize returns the result of symbolizing the file identified by fh, using a cache.

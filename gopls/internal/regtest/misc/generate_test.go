@@ -11,8 +11,6 @@ package misc
 
 import (
 	"testing"
-
-	. "golang.org/x/tools/internal/lsp/regtest"
 )
 
 func TestGenerateProgress(t *testing.T) {

@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
 )
 
 func init() {

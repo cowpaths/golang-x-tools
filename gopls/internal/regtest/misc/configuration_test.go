@@ -7,9 +7,7 @@ package misc
 import (
 	"testing"
 
-	. "golang.org/x/tools/internal/lsp/regtest"
-
-	"golang.org/x/tools/internal/testenv"
+	"github.com/cowpaths/golang-x-tools/internal/testenv"
 )
 
 // Test that enabling and disabling produces the expected results of showing

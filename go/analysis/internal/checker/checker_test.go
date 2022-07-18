@@ -11,12 +11,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/go/analysis/internal/checker"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/cowpaths/golang-x-tools/go/analysis"
+	"github.com/cowpaths/golang-x-tools/go/analysis/analysistest"
+	"github.com/cowpaths/golang-x-tools/go/analysis/internal/checker"
+	"github.com/cowpaths/golang-x-tools/go/analysis/passes/inspect"
+	"github.com/cowpaths/golang-x-tools/go/ast/inspector"
+	"github.com/cowpaths/golang-x-tools/internal/testenv"
 )
 
 var from, to string

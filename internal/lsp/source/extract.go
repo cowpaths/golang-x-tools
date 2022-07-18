@@ -15,12 +15,12 @@ import (
 	"strings"
 	"unicode"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/internal/analysisinternal"
-	"golang.org/x/tools/internal/lsp/bug"
-	"golang.org/x/tools/internal/lsp/safetoken"
-	"golang.org/x/tools/internal/span"
+	"github.com/cowpaths/golang-x-tools/go/analysis"
+	"github.com/cowpaths/golang-x-tools/go/ast/astutil"
+	"github.com/cowpaths/golang-x-tools/internal/analysisinternal"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/bug"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/safetoken"
+	"github.com/cowpaths/golang-x-tools/internal/span"
 )
 
 func extractVariable(fset *token.FileSet, rng span.Range, src []byte, file *ast.File, _ *types.Package, info *types.Info) (*analysis.SuggestedFix, error) {

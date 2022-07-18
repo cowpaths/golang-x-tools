@@ -9,7 +9,7 @@ To get a specific version of `gopls` (for example, to test a prerelease
 version), run:
 
 ```sh
-GO111MODULE=on go install golang.org/x/tools/gopls@vX.Y.Z
+GO111MODULE=on go install github.com/cowpaths/golang-x-tools/gopls@vX.Y.Z
 ```
 
 Where `vX.Y.Z` is the desired version.
@@ -25,9 +25,9 @@ cd $(mktemp -d)
 go mod init gopls-unstable
 
 # Use 'go get' to add requirements and to ensure they work together.
-go get -d golang.org/x/tools/gopls@master golang.org/x/tools@master
+go get -d github.com/cowpaths/golang-x-tools/gopls@master github.com/cowpaths/golang-x-tools@master
 
-go install golang.org/x/tools/gopls
+go install github.com/cowpaths/golang-x-tools/gopls
 ```
 
 ## Working on the Go source distribution
@@ -50,7 +50,7 @@ to **install gopls using Go 1.18 or later**. The easiest way to do this is by
 install gopls:
 
 ```
-$ go install golang.org/x/tools/gopls@latest
+$ go install github.com/cowpaths/golang-x-tools/gopls@latest
 ```
 
 It is strongly recommended that you install the latest version of `gopls`, or

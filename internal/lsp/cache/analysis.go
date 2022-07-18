@@ -12,14 +12,14 @@ import (
 	"reflect"
 	"sync"
 
+	"github.com/cowpaths/golang-x-tools/go/analysis"
+	"github.com/cowpaths/golang-x-tools/internal/analysisinternal"
+	"github.com/cowpaths/golang-x-tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/debug/tag"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
+	"github.com/cowpaths/golang-x-tools/internal/memoize"
+	"github.com/cowpaths/golang-x-tools/internal/span"
 	"golang.org/x/sync/errgroup"
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/internal/analysisinternal"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/lsp/debug/tag"
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/memoize"
-	"golang.org/x/tools/internal/span"
 )
 
 func (s *snapshot) Analyze(ctx context.Context, id string, analyzers []*source.Analyzer) ([]*source.Diagnostic, error) {

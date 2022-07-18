@@ -6,8 +6,8 @@
 package main
 
 import (
-	"golang.org/x/tools/go/analysis/passes/shadow"
-	"golang.org/x/tools/go/analysis/singlechecker"
+	"github.com/cowpaths/golang-x-tools/go/analysis/passes/shadow"
+	"github.com/cowpaths/golang-x-tools/go/analysis/singlechecker"
 )
 
 func main() { singlechecker.Main(shadow.Analyzer) }

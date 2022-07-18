@@ -9,10 +9,10 @@ import (
 	"fmt"
 	"sync"
 
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/event/core"
-	"golang.org/x/tools/internal/event/keys"
-	"golang.org/x/tools/internal/event/label"
+	"github.com/cowpaths/golang-x-tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/event/core"
+	"github.com/cowpaths/golang-x-tools/internal/event/keys"
+	"github.com/cowpaths/golang-x-tools/internal/event/label"
 )
 
 type SpanContext struct {

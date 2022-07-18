@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/imports"
+	"github.com/cowpaths/golang-x-tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/imports"
 )
 
 // KnownPackages returns a list of all known packages

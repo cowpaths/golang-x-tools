@@ -13,10 +13,10 @@ import (
 	"go/types"
 	"sort"
 
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/safetoken"
-	"golang.org/x/tools/internal/span"
+	"github.com/cowpaths/golang-x-tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/safetoken"
+	"github.com/cowpaths/golang-x-tools/internal/span"
 )
 
 func Implementation(ctx context.Context, snapshot Snapshot, f FileHandle, pp protocol.Position) ([]protocol.Location, error) {

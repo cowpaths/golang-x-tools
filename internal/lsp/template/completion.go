@@ -12,8 +12,8 @@ import (
 	"go/token"
 	"strings"
 
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/source"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
 )
 
 // information needed for completion

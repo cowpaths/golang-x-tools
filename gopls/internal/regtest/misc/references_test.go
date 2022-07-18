@@ -8,8 +8,6 @@ import (
 	"fmt"
 	"strings"
 	"testing"
-
-	. "golang.org/x/tools/internal/lsp/regtest"
 )
 
 func TestStdlibReferences(t *testing.T) {

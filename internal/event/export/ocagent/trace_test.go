@@ -9,7 +9,7 @@ import (
 	"errors"
 	"testing"
 
-	"golang.org/x/tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/event"
 )
 
 func TestTrace(t *testing.T) {

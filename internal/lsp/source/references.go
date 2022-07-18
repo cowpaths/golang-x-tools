@@ -15,11 +15,11 @@ import (
 	"sort"
 	"strconv"
 
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/lsp/bug"
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/safetoken"
-	"golang.org/x/tools/internal/span"
+	"github.com/cowpaths/golang-x-tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/bug"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/safetoken"
+	"github.com/cowpaths/golang-x-tools/internal/span"
 )
 
 // ReferenceInfo holds information about reference to an identifier in Go source.

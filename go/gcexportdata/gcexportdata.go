@@ -12,12 +12,12 @@
 // problems for developer tools that use it, since they must be able to
 // consume the outputs of the gc compiler both before and after a Go
 // update such as from Go 1.7 to Go 1.8.  Because this package lives in
-// golang.org/x/tools, sites can update their version of this repo some
+// github.com/cowpaths/golang-x-tools, sites can update their version of this repo some
 // time before the Go 1.8 release and rebuild and redeploy their
 // developer tools, which will then be able to consume both Go 1.7 and
 // Go 1.8 export data files, so they will work before and after the
 // Go update. (See discussion at https://golang.org/issue/15651.)
-package gcexportdata // import "golang.org/x/tools/go/gcexportdata"
+package gcexportdata // import "github.com/cowpaths/golang-x-tools/go/gcexportdata"
 
 import (
 	"bufio"
@@ -30,7 +30,7 @@ import (
 	"io/ioutil"
 	"os/exec"
 
-	"golang.org/x/tools/go/internal/gcimporter"
+	"github.com/cowpaths/golang-x-tools/go/internal/gcimporter"
 )
 
 // Find returns the name of an object (.o) or archive (.a) file
@@ -43,7 +43,7 @@ import (
 // Find also returns the package's resolved (canonical) import path,
 // reflecting the effects of srcDir and vendoring on importPath.
 //
-// Deprecated: Use the higher-level API in golang.org/x/tools/go/packages,
+// Deprecated: Use the higher-level API in github.com/cowpaths/golang-x-tools/go/packages,
 // which is more efficient.
 func Find(importPath, srcDir string) (filename, path string) {
 	cmd := exec.Command("go", "list", "-json", "-export", "--", importPath)

@@ -9,11 +9,11 @@ import (
 	"fmt"
 	"sort"
 
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/lsp/command"
-	"golang.org/x/tools/internal/lsp/mod"
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/source"
+	"github.com/cowpaths/golang-x-tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/command"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/mod"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
 )
 
 func (s *Server) codeLens(ctx context.Context, params *protocol.CodeLensParams) ([]protocol.CodeLens, error) {

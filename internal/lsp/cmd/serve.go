@@ -14,13 +14,13 @@ import (
 	"os"
 	"time"
 
-	"golang.org/x/tools/internal/fakenet"
-	"golang.org/x/tools/internal/jsonrpc2"
-	"golang.org/x/tools/internal/lsp/cache"
-	"golang.org/x/tools/internal/lsp/debug"
-	"golang.org/x/tools/internal/lsp/lsprpc"
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/tool"
+	"github.com/cowpaths/golang-x-tools/internal/fakenet"
+	"github.com/cowpaths/golang-x-tools/internal/jsonrpc2"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/cache"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/debug"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/lsprpc"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/tool"
 )
 
 // Serve is a struct that exposes the configurable parts of the LSP server as

@@ -14,9 +14,9 @@ import (
 	"regexp"
 	"strings"
 
-	"golang.org/x/tools/go/expect"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/span"
+	"github.com/cowpaths/golang-x-tools/go/expect"
+	"github.com/cowpaths/golang-x-tools/go/packages"
+	"github.com/cowpaths/golang-x-tools/internal/span"
 )
 
 const (

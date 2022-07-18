@@ -4,7 +4,7 @@ package stub
 import (
 	"bytes"
 	renamed_context "context"
-	"golang.org/x/tools/internal/lsp/stub/other"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/stub/other"
 )
 
 // This file tests that if an interface

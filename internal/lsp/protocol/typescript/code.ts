@@ -1363,7 +1363,7 @@ function output(side: side) {
           "context"
           "encoding/json"
 
-          "golang.org/x/tools/internal/jsonrpc2"
+          "github.com/cowpaths/golang-x-tools/internal/jsonrpc2"
         )
         `);
   const a = side.name[0].toUpperCase() + side.name.substring(1);

@@ -17,14 +17,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/lsp/debug/tag"
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/packagesinternal"
-	"golang.org/x/tools/internal/span"
+	"github.com/cowpaths/golang-x-tools/go/packages"
+	"github.com/cowpaths/golang-x-tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/gocommand"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/debug/tag"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
+	"github.com/cowpaths/golang-x-tools/internal/packagesinternal"
+	"github.com/cowpaths/golang-x-tools/internal/span"
 )
 
 var loadID uint64 // atomic identifier for loads

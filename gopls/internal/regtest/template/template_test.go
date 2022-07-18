@@ -8,10 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/hooks"
-	"golang.org/x/tools/internal/lsp/bug"
-	"golang.org/x/tools/internal/lsp/protocol"
-	. "golang.org/x/tools/internal/lsp/regtest"
+	"github.com/cowpaths/golang-x-tools/gopls/internal/hooks"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/bug"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
 )
 
 func TestMain(m *testing.M) {

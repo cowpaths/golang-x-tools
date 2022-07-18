@@ -20,17 +20,17 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/cowpaths/golang-x-tools/go/packages"
+	"github.com/cowpaths/golang-x-tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/gocommand"
+	"github.com/cowpaths/golang-x-tools/internal/imports"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
+	"github.com/cowpaths/golang-x-tools/internal/span"
+	"github.com/cowpaths/golang-x-tools/internal/xcontext"
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/semver"
 	exec "golang.org/x/sys/execabs"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/imports"
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/span"
-	"golang.org/x/tools/internal/xcontext"
 )
 
 type View struct {

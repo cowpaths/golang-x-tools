@@ -33,7 +33,7 @@ to create a `go.work` file containing the modules you wish to work on, and set
 your workspace root to the directory containing the `go.work` file.
 
 For example, suppose this repo is checked out into the `$WORK/tools` directory.
-We can work on both `golang.org/x/tools` and `golang.org/x/tools/gopls`
+We can work on both `github.com/cowpaths/golang-x-tools` and `github.com/cowpaths/golang-x-tools/gopls`
 simultaneously by creating a `go.work` file:
 
 ```

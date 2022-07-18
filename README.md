@@ -1,14 +1,14 @@
 # Go Tools
 
-[![PkgGoDev](https://pkg.go.dev/badge/golang.org/x/tools)](https://pkg.go.dev/golang.org/x/tools)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/cowpaths/golang-x-tools)](https://pkg.go.dev/github.com/cowpaths/golang-x-tools)
 
-This repository provides the `golang.org/x/tools` module, comprising
+This repository provides the `github.com/cowpaths/golang-x-tools` module, comprising
 various tools and packages mostly for static analysis of Go programs,
 some of which are listed below.
 Use the "Go reference" link above for more information about any package.
 
 It also contains the
-[`golang.org/x/tools/gopls`](https://pkg.go.dev/golang.org/x/tools/gopls)
+[`github.com/cowpaths/golang-x-tools/gopls`](https://pkg.go.dev/github.com/cowpaths/golang-x-tools/gopls)
 module, whose root package is a language-server protocol (LSP) server for Go.
 An LSP server analyses the source code of a project and
 responds to requests from a wide range of editors such as VSCode and
@@ -27,7 +27,7 @@ Selected commands:
 - `cmd/toolstash` is a utility to simplify working with multiple versions of the Go toolchain.
 
 These commands may be fetched with a command such as
-`go install golang.org/x/tools/cmd/goimports@latest`.
+`go install github.com/cowpaths/golang-x-tools/cmd/goimports@latest`.
 
 Selected packages:
 
@@ -62,17 +62,17 @@ Numerous other packages provide more esoteric functionality.
 
 <!-- Some that didn't make the cut: 
 
-golang.org/x/tools/benchmark/parse
-golang.org/x/tools/go/ast/astutil
-golang.org/x/tools/go/types/typeutil
-golang.org/x/tools/go/vcs
-golang.org/x/tools/godoc
-golang.org/x/tools/playground
-golang.org/x/tools/present
-golang.org/x/tools/refactor/importgraph
-golang.org/x/tools/refactor/rename
-golang.org/x/tools/refactor/satisfy
-golang.org/x/tools/txtar
+github.com/cowpaths/golang-x-tools/benchmark/parse
+github.com/cowpaths/golang-x-tools/go/ast/astutil
+github.com/cowpaths/golang-x-tools/go/types/typeutil
+github.com/cowpaths/golang-x-tools/go/vcs
+github.com/cowpaths/golang-x-tools/godoc
+github.com/cowpaths/golang-x-tools/playground
+github.com/cowpaths/golang-x-tools/present
+github.com/cowpaths/golang-x-tools/refactor/importgraph
+github.com/cowpaths/golang-x-tools/refactor/rename
+github.com/cowpaths/golang-x-tools/refactor/satisfy
+github.com/cowpaths/golang-x-tools/txtar
 
 -->
 

@@ -15,8 +15,8 @@ import (
 	"go/types"
 	"reflect"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/ssa"
+	"github.com/cowpaths/golang-x-tools/go/analysis"
+	"github.com/cowpaths/golang-x-tools/go/ssa"
 )
 
 var Analyzer = &analysis.Analyzer{

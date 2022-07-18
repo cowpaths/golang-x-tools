@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"go/token"
 
-	gvc "golang.org/x/tools/gopls/internal/govulncheck"
-	"golang.org/x/tools/internal/lsp/protocol"
+	gvc "github.com/cowpaths/golang-x-tools/gopls/internal/govulncheck"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
 	"golang.org/x/vuln/osv"
 	"golang.org/x/vuln/vulncheck"
 )

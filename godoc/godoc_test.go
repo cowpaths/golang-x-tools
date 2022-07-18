@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/cowpaths/golang-x-tools/internal/typeparams"
 )
 
 func TestPkgLinkFunc(t *testing.T) {

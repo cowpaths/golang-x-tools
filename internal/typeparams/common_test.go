@@ -11,8 +11,7 @@ import (
 	"go/types"
 	"testing"
 
-	"golang.org/x/tools/internal/testenv"
-	. "golang.org/x/tools/internal/typeparams"
+	"github.com/cowpaths/golang-x-tools/internal/testenv"
 )
 
 func TestGetIndexExprData(t *testing.T) {

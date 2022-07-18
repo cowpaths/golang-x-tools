@@ -64,7 +64,7 @@ The generator then emits some utility functions (ex: NoteFailure) and a main rou
 To generate a set of source files just to see what they look like, you can build and run the test generator as follows. This creates a new directory "cabiTest" containing generated test files:
 
 ```
-$ git clone https://golang.org/x/tools
+$ git clone https://github.com/cowpaths/golang-x-tools
 $ cd tools/cmd/signature-fuzzer/fuzz-driver
 $ go build .
 $ ./fuzz-driver -numpkgs 3 -numfcns 5 -seed 12345 -outdir /tmp/sigfuzzTest -pkgpath foobar
@@ -99,7 +99,7 @@ $
 The test runner orchestrates multiple runs of the fuzzer, iteratively emitting code, building it, and testing the resulting binary. To use the runner, build and invoke it with a specific number of iterations; it will select a new random seed on each invocation. The runner will terminate as soon as it finds a failure. Example:
 
 ```
-$ git clone https://golang.org/x/tools
+$ git clone https://github.com/cowpaths/golang-x-tools
 $ cd tools/cmd/signature-fuzzer/fuzz-runner
 $ go build .
 $ ./fuzz-runner -numit=3

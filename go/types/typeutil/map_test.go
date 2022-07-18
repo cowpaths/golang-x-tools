@@ -16,8 +16,8 @@ import (
 	"go/types"
 	"testing"
 
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/cowpaths/golang-x-tools/go/types/typeutil"
+	"github.com/cowpaths/golang-x-tools/internal/typeparams"
 )
 
 var (

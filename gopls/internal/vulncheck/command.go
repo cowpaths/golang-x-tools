@@ -14,9 +14,9 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/go/packages"
-	gvc "golang.org/x/tools/gopls/internal/govulncheck"
-	"golang.org/x/tools/internal/lsp/command"
+	"github.com/cowpaths/golang-x-tools/go/packages"
+	gvc "github.com/cowpaths/golang-x-tools/gopls/internal/govulncheck"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/command"
 	"golang.org/x/vuln/client"
 	"golang.org/x/vuln/osv"
 	"golang.org/x/vuln/vulncheck"

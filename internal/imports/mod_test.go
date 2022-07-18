@@ -19,12 +19,12 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/cowpaths/golang-x-tools/internal/gocommand"
+	"github.com/cowpaths/golang-x-tools/internal/gopathwalk"
+	"github.com/cowpaths/golang-x-tools/internal/proxydir"
+	"github.com/cowpaths/golang-x-tools/internal/testenv"
+	"github.com/cowpaths/golang-x-tools/txtar"
 	"golang.org/x/mod/module"
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/gopathwalk"
-	"golang.org/x/tools/internal/proxydir"
-	"golang.org/x/tools/internal/testenv"
-	"golang.org/x/tools/txtar"
 )
 
 // Tests that we can find packages in the stdlib.

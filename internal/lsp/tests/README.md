@@ -26,7 +26,7 @@ in the golden file with a heading like,
 ```
 
 The format of these headings vary: they are defined by the
-[`Golden`](https://pkg.go.dev/golang.org/x/tools/internal/lsp/tests#Data.Golden)
+[`Golden`](https://pkg.go.dev/github.com/cowpaths/golang-x-tools/internal/lsp/tests#Data.Golden)
 function for each annotation. In the case above, the format is: annotation
 name, file name, annotation line location, annotation character location.
 

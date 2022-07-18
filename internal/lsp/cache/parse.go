@@ -18,14 +18,14 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/lsp/debug/tag"
-	"golang.org/x/tools/internal/lsp/diff"
-	"golang.org/x/tools/internal/lsp/diff/myers"
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/safetoken"
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/memoize"
+	"github.com/cowpaths/golang-x-tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/debug/tag"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/diff"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/diff/myers"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/safetoken"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
+	"github.com/cowpaths/golang-x-tools/internal/memoize"
 )
 
 // parseKey uniquely identifies a parsed Go file.

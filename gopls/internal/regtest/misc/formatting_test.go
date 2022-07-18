@@ -8,9 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	. "golang.org/x/tools/internal/lsp/regtest"
-
-	"golang.org/x/tools/internal/lsp/tests"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/tests"
 )
 
 const unformattedProgram = `

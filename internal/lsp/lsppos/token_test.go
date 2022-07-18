@@ -8,8 +8,7 @@ import (
 	"go/token"
 	"testing"
 
-	. "golang.org/x/tools/internal/lsp/lsppos"
-	"golang.org/x/tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
 )
 
 func makeTokenMapper(content []byte) (*TokenMapper, *token.File) {

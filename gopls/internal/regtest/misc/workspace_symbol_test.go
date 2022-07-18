@@ -7,10 +7,9 @@ package misc
 import (
 	"testing"
 
-	"golang.org/x/tools/internal/lsp/protocol"
-	. "golang.org/x/tools/internal/lsp/regtest"
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
+	"github.com/cowpaths/golang-x-tools/internal/testenv"
 )
 
 func TestWorkspaceSymbolMissingMetadata(t *testing.T) {

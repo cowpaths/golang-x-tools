@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/go/analysis/passes/buildtag"
+	"github.com/cowpaths/golang-x-tools/go/analysis"
+	"github.com/cowpaths/golang-x-tools/go/analysis/analysistest"
+	"github.com/cowpaths/golang-x-tools/go/analysis/passes/buildtag"
 )
 
 func Test(t *testing.T) {

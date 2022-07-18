@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/cowpaths/golang-x-tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
 	"golang.org/x/mod/modfile"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/source"
 )
 
 func Hover(ctx context.Context, snapshot source.Snapshot, fh source.FileHandle, position protocol.Position) (*protocol.Hover, error) {
@@ -132,9 +132,9 @@ func formatExplanation(text string, req *modfile.Require, options *source.Option
 	b.WriteString("This module is necessary because " + reference + " is imported in")
 
 	// If the explanation is 3 lines, then it is of the form:
-	// # golang.org/x/tools
+	// # github.com/cowpaths/golang-x-tools
 	// modtest
-	// golang.org/x/tools/go/packages
+	// github.com/cowpaths/golang-x-tools/go/packages
 	if length == 3 {
 		msg := fmt.Sprintf(" `%s`.", splt[1])
 		b.WriteString(msg)

@@ -5,9 +5,9 @@
 package lostcancel_test
 
 import (
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/go/analysis/passes/lostcancel"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/cowpaths/golang-x-tools/go/analysis/analysistest"
+	"github.com/cowpaths/golang-x-tools/go/analysis/passes/lostcancel"
+	"github.com/cowpaths/golang-x-tools/internal/typeparams"
 	"testing"
 )
 

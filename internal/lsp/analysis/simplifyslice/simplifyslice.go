@@ -13,9 +13,9 @@ import (
 	"go/ast"
 	"go/printer"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/inspector"
+	"github.com/cowpaths/golang-x-tools/go/analysis"
+	"github.com/cowpaths/golang-x-tools/go/analysis/passes/inspect"
+	"github.com/cowpaths/golang-x-tools/go/ast/inspector"
 )
 
 const Doc = `check for slice simplifications

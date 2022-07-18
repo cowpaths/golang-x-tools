@@ -7,7 +7,7 @@ package ssa
 import (
 	"go/types"
 
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/cowpaths/golang-x-tools/internal/typeparams"
 )
 
 // tpWalker walks over types looking for parameterized types.

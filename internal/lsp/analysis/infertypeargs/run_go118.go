@@ -12,10 +12,10 @@ import (
 	"go/token"
 	"go/types"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/cowpaths/golang-x-tools/go/analysis"
+	"github.com/cowpaths/golang-x-tools/go/analysis/passes/inspect"
+	"github.com/cowpaths/golang-x-tools/go/ast/inspector"
+	"github.com/cowpaths/golang-x-tools/internal/typeparams"
 )
 
 func run(pass *analysis.Pass) (interface{}, error) {

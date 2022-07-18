@@ -7,9 +7,9 @@ package cache
 import (
 	"go/types"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/packagesinternal"
-	"golang.org/x/tools/internal/span"
+	"github.com/cowpaths/golang-x-tools/go/packages"
+	"github.com/cowpaths/golang-x-tools/internal/packagesinternal"
+	"github.com/cowpaths/golang-x-tools/internal/span"
 )
 
 // Declare explicit types for package paths, names, and IDs to ensure that we
@@ -42,23 +42,23 @@ type Metadata struct {
 
 	// IsIntermediateTestVariant reports whether the given package is an
 	// intermediate test variant, e.g.
-	// "golang.org/x/tools/internal/lsp/cache [golang.org/x/tools/internal/lsp/source.test]".
+	// "github.com/cowpaths/golang-x-tools/internal/lsp/cache [github.com/cowpaths/golang-x-tools/internal/lsp/source.test]".
 	//
 	// Such test variants arise when an x_test package (in this case source_test)
 	// imports a package (in this case cache) that itself imports the the
 	// non-x_test package (in this case source).
 	//
 	// This is done so that the forward transitive closure of source_test has
-	// only one package for the "golang.org/x/tools/internal/lsp/source" import.
+	// only one package for the "github.com/cowpaths/golang-x-tools/internal/lsp/source" import.
 	// The intermediate test variant exists to hold the test variant import:
 	//
-	// golang.org/x/tools/internal/lsp/source_test [golang.org/x/tools/internal/lsp/source.test]
-	//  | "golang.org/x/tools/internal/lsp/cache" -> golang.org/x/tools/internal/lsp/cache [golang.org/x/tools/internal/lsp/source.test]
-	//  | "golang.org/x/tools/internal/lsp/source" -> golang.org/x/tools/internal/lsp/source [golang.org/x/tools/internal/lsp/source.test]
+	// github.com/cowpaths/golang-x-tools/internal/lsp/source_test [github.com/cowpaths/golang-x-tools/internal/lsp/source.test]
+	//  | "github.com/cowpaths/golang-x-tools/internal/lsp/cache" -> github.com/cowpaths/golang-x-tools/internal/lsp/cache [github.com/cowpaths/golang-x-tools/internal/lsp/source.test]
+	//  | "github.com/cowpaths/golang-x-tools/internal/lsp/source" -> github.com/cowpaths/golang-x-tools/internal/lsp/source [github.com/cowpaths/golang-x-tools/internal/lsp/source.test]
 	//  | ...
 	//
-	// golang.org/x/tools/internal/lsp/cache [golang.org/x/tools/internal/lsp/source.test]
-	//  | "golang.org/x/tools/internal/lsp/source" -> golang.org/x/tools/internal/lsp/source [golang.org/x/tools/internal/lsp/source.test]
+	// github.com/cowpaths/golang-x-tools/internal/lsp/cache [github.com/cowpaths/golang-x-tools/internal/lsp/source.test]
+	//  | "github.com/cowpaths/golang-x-tools/internal/lsp/source" -> github.com/cowpaths/golang-x-tools/internal/lsp/source [github.com/cowpaths/golang-x-tools/internal/lsp/source.test]
 	//  | ...
 	//
 	// We filter these variants out in certain places. For example, there is

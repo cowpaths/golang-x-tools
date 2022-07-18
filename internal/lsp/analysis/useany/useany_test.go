@@ -7,9 +7,9 @@ package useany_test
 import (
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/internal/lsp/analysis/useany"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/cowpaths/golang-x-tools/go/analysis/analysistest"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/analysis/useany"
+	"github.com/cowpaths/golang-x-tools/internal/typeparams"
 )
 
 func Test(t *testing.T) {

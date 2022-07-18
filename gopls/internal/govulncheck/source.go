@@ -13,7 +13,7 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/go/packages"
+	"github.com/cowpaths/golang-x-tools/go/packages"
 	"golang.org/x/vuln/client"
 	"golang.org/x/vuln/vulncheck"
 )

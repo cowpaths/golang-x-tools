@@ -7,8 +7,8 @@ package cache
 import (
 	"sort"
 
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/span"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
+	"github.com/cowpaths/golang-x-tools/internal/span"
 )
 
 // A metadataGraph holds information about a transtively closed import graph of

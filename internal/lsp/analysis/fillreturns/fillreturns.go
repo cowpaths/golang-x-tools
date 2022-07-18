@@ -16,11 +16,11 @@ import (
 	"regexp"
 	"strings"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/internal/analysisinternal"
-	"golang.org/x/tools/internal/lsp/fuzzy"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/cowpaths/golang-x-tools/go/analysis"
+	"github.com/cowpaths/golang-x-tools/go/ast/astutil"
+	"github.com/cowpaths/golang-x-tools/internal/analysisinternal"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/fuzzy"
+	"github.com/cowpaths/golang-x-tools/internal/typeparams"
 )
 
 const Doc = `suggest fixes for errors due to an incorrect number of return values

@@ -9,8 +9,6 @@ package completion
 
 import (
 	"testing"
-
-	. "golang.org/x/tools/internal/lsp/regtest"
 )
 
 // test generic receivers

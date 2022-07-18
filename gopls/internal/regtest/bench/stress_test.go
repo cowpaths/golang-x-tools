@@ -10,8 +10,6 @@ import (
 	"fmt"
 	"testing"
 	"time"
-
-	. "golang.org/x/tools/internal/lsp/regtest"
 )
 
 // Pilosa is a repository that has historically caused significant memory

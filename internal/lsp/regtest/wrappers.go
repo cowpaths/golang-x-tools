@@ -8,9 +8,9 @@ import (
 	"encoding/json"
 	"path"
 
-	"golang.org/x/tools/internal/lsp/command"
-	"golang.org/x/tools/internal/lsp/fake"
-	"golang.org/x/tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/command"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/fake"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
 )
 
 func (e *Env) ChangeFilesOnDisk(events []fake.FileEvent) {

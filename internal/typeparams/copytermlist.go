@@ -22,7 +22,7 @@ import (
 	"runtime"
 	"strings"
 
-	"golang.org/x/tools/go/ast/astutil"
+	"github.com/cowpaths/golang-x-tools/go/ast/astutil"
 )
 
 func main() {

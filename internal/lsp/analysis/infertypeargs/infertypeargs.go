@@ -7,8 +7,8 @@
 package infertypeargs
 
 import (
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
+	"github.com/cowpaths/golang-x-tools/go/analysis"
+	"github.com/cowpaths/golang-x-tools/go/analysis/passes/inspect"
 )
 
 const Doc = `check for unnecessary type arguments in call expressions

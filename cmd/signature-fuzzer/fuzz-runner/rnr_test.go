@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/internal/testenv"
+	"github.com/cowpaths/golang-x-tools/internal/testenv"
 )
 
 func canRace(t *testing.T) bool {

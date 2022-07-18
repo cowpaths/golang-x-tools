@@ -9,10 +9,10 @@ package usesgenerics
 import (
 	"reflect"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/internal/typeparams/genericfeatures"
+	"github.com/cowpaths/golang-x-tools/go/analysis"
+	"github.com/cowpaths/golang-x-tools/go/analysis/passes/inspect"
+	"github.com/cowpaths/golang-x-tools/go/ast/inspector"
+	"github.com/cowpaths/golang-x-tools/internal/typeparams/genericfeatures"
 )
 
 var Analyzer = &analysis.Analyzer{

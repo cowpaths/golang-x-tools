@@ -6,8 +6,6 @@ package misc
 
 import (
 	"testing"
-
-	. "golang.org/x/tools/internal/lsp/regtest"
 )
 
 // This test passes (TestHoverOnError in definition_test.go) without

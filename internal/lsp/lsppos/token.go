@@ -8,8 +8,8 @@ import (
 	"errors"
 	"go/token"
 
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/safetoken"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/safetoken"
 )
 
 // TokenMapper maps token.Pos to LSP positions for a single file.

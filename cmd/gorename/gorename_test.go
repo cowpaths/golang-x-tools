@@ -15,7 +15,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/internal/testenv"
+	"github.com/cowpaths/golang-x-tools/internal/testenv"
 )
 
 type test struct {

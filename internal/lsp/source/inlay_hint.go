@@ -13,10 +13,10 @@ import (
 	"go/types"
 	"strings"
 
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/lsp/lsppos"
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/cowpaths/golang-x-tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/lsppos"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/typeparams"
 )
 
 const (

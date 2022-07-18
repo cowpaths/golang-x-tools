@@ -16,10 +16,10 @@ import (
 	"os"
 	"unicode/utf8"
 
-	"golang.org/x/tools/internal/lsp"
-	"golang.org/x/tools/internal/lsp/protocol"
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/span"
+	"github.com/cowpaths/golang-x-tools/internal/lsp"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/protocol"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
+	"github.com/cowpaths/golang-x-tools/internal/span"
 )
 
 // generate semantic tokens and interpolate them in the file

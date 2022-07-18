@@ -11,10 +11,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/cowpaths/golang-x-tools/internal/lsp/fake"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
+	"github.com/cowpaths/golang-x-tools/internal/span"
 	"golang.org/x/mod/modfile"
-	"golang.org/x/tools/internal/lsp/fake"
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/span"
 )
 
 // osFileSource is a fileSource that just reads from the operating system.

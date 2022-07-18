@@ -11,14 +11,14 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/imports"
-	"golang.org/x/tools/internal/lsp/progress"
-	"golang.org/x/tools/internal/lsp/source"
-	"golang.org/x/tools/internal/persistent"
-	"golang.org/x/tools/internal/span"
-	"golang.org/x/tools/internal/xcontext"
+	"github.com/cowpaths/golang-x-tools/internal/event"
+	"github.com/cowpaths/golang-x-tools/internal/gocommand"
+	"github.com/cowpaths/golang-x-tools/internal/imports"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/progress"
+	"github.com/cowpaths/golang-x-tools/internal/lsp/source"
+	"github.com/cowpaths/golang-x-tools/internal/persistent"
+	"github.com/cowpaths/golang-x-tools/internal/span"
+	"github.com/cowpaths/golang-x-tools/internal/xcontext"
 )
 
 type Session struct {
